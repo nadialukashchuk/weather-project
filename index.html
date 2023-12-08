@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <title>Weather</title>
+</head>
+<body>
+    <div class="weather-app">
+    <header>
+        <form id="search-form">
+            <input  type="text" placeholder="Enter a city..." required autofocus class="search-input" id="search-input" />
+            <input class="search-button" type="submit" value="Search" />
+        </form>
+    </header>
+    <main>
+    <div class="current-weather">
+    <div >
+        <h1 class="current-city" id="current-city">London</h1>
+        <p class="current-details">
+            <span id="current-date"></span>, moderate rain <br />
+        Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong> </p>
+    </div>
+    <div class="current-temperature">
+        <span class="current-temperature-icon">:D </span
+        ><span class="current-temperature-value" id="current-temperature">15</span
+        ><span class="current-temperature-unit">°C </span>
+        </div>
+    </div>
+
+    <div class="forecast-weather">
+        <ul>
+            <li>
+                Mon
+                <br />
+                <strong>14</strong> - 18
+            </li>
+            <li>
+                Tue
+                <br />
+                <strong>14</strong> - 18
+            </li><li>
+                Wed
+                <br />
+                <strong>14</strong> - 18
+            </li><li>
+                Thur
+                <br />
+                <strong>14</strong> - 18
+            </li><li>
+                Fri
+                <br />
+                <strong>14</strong> - 18
+            </li><li>
+                Sut
+                <br />
+                <strong>14</strong> - 18
+            </li>
+        </ul>
+    </div>
+    </main>
+    <footer>
+        <p>This project was coded by <a href="#" target="_blank">Nadiia Lukashchuk</a> and is <a href="#" target="_blank">on GitHub</a> and
+        <a href="#" target="_blank">hosted on Netlifu</a></p>
+    </footer>
+</div>
+<script src="src/index.js"></script>
+</body>
+</html>
